@@ -40,7 +40,7 @@ global.sp = ''
 
 //messages
 global.mess = {
-    success: 'تم..',
+    success: 'تم يروحي✨',
     admin: '『 الامر دا لادمن بس! 』',
     botAdmin: '『 ارفع البوت ادمن الاول 』',
     premime: '『 ميزات خاصة متميزة إذا كنت ترغب في تسجيل نوع الإيجار 』',
@@ -55,10 +55,10 @@ global.mess = {
 }
 
 //media target
-global.thum = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
-global.log0 = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur logo pic
-global.err4r = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur error pic
-global.thumb = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
+global.thum = fs.readFileSync("./ElgazarMedia/theme/cheemspic.jpg") //ur thumb pic
+global.log0 = fs.readFileSync("./ElgazarMedia/theme/cheemspic.jpg") //ur logo pic
+global.err4r = fs.readFileSync("./ElgazarMedia/theme/cheemspic.jpg") //ur error pic
+global.thumb = fs.readFileSync("./ElgazarMedia/theme/cheemspic.jpg") //ur thumb pic
 
 //menu image maker
 global.flaming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
