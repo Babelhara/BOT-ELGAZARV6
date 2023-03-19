@@ -1100,10 +1100,10 @@ break
                 }
             }
             break
-  case 'رهان': {
+  case 'الفاكهه': case 'فاكهه': {
             const somtoy = solot[Math.floor(Math.random() * solot.length)]
-            let sloth =`[  🎰VIRTUAL SLOT 🎰  ]\n------------------------\n\n🍒 : 🍌 : 🍇\n${somtoy}<=====\n🍇 : 🍌 : 🍒\n\n------------------------\n[  🎰 VIRTUAL SLOT 🎰  ]\n\n*Information* :\n_If you get 3 of the same fruit_\n_Means You Win_\n\n_Example : 🍒 : 🍒 : 🍒_ <=====`
-            let buttons = [{ buttonId: 'slot', buttonText: { displayText: '🎰PLAY AGAIN🎰' }, type: 1 }]
+            let sloth =`[  🎰 لعبه الفواكه 🎰  ]\n------------------------\n\n🍒 : 🍌 : 🍇\n${somtoy}<=====\n🍇 : 🍌 : 🍒\n\n------------------------\n[  🎰 لعبه الفواكه 🎰  ]\n\n*معلومة* :\n_إذا حصلت على 3 من نفس الفاكهة_\n_يعني أنك فزت_\n\n_مثال : 🍒 : 🍒 : 🍒_ <=====`
+            let buttons = [{ buttonId: 'الفاكهه', buttonText: { displayText: '🎰مره اخري🎰' }, type: 1 }]
             await XeonBotInc.sendButtonText(m.chat, buttons, sloth, botname, m)
             }
             break
@@ -1648,15 +1648,15 @@ break
                                await sleep(1000)
                             }
                             break
-case 'broadcastimage': case 'bcimage': case 'broadcastvideo': case 'broadcastvid':
+case 'اذاعه': case 'شير': case 'broadcastvideo': case 'broadcastvid':
 if(!isCreator) throw mess.owner
         if (!text) throw `enter text`
         let getGroups = await XeonBotInc.groupFetchAllParticipating()
         let groups = Object.entries(getGroups).slice(0).map(entry => entry[1])
         let xeoncast = groups.map(v => v.id)
-        m.reply(` Broadcasting in ${xeoncast.length} Group Chat, in ${xeoncast.length * 1.5} seconds`)
+        m.reply(` شير في ${xeoncast.length} جروب في ${xeoncast.length * 1.5} ثانيه`)
         for (let i of xeoncast) {
-let txt = `${ownername}'s Broadcast\n\nMessage : ${text}`
+let txt = `${ownername}' اذاعه\n\nالرساله : ${text}`
 if(/image/.test(mime)) {
 let media = await quoted.download()
 await XeonBotInc.sendMessage(i, { image:media,  caption: txt,mentions:participants.map(a => a.id) })
@@ -1666,7 +1666,7 @@ let media = await quoted.download()
 await XeonBotInc.sendMessage(i, { video:media,  caption: txt, mentions:participants.map(a => a.id) })
 }
             }
-        m.reply(`Successfuly Broadcasted in ${xeoncast.length} Groups`)      
+        m.reply(`اذاعه بنجاح في ${xeoncast.length} جروب`)      
         break
             case 'q': case 'quoted': {
 		if (!m.quoted) return m.reply('Reply Message!!')
@@ -3412,7 +3412,7 @@ break
                 XeonBotInc.sendMessage(m.chat, { audio: buff, mimetype: 'audio/mpeg' }, { quoted : m })
                 fs.unlinkSync(ran)
                 })
-                } else m.reply(`Reply to the audio you want to change with a caption *${prefix + command}*`)
+                } else m.reply(`رد علي مقطع صوتي واكتب *${prefix + command}*`)
                 } catch (e) {
                 m.reply(e)
                 }
@@ -8468,8 +8468,8 @@ teks = `• مرحبا ياروحي ⤌⤈      
 ( .فك-البلوك )
 ♚ الغاء البلوك عن الشخص 
 ꔹ━━━━━ꔹ
-( .شير )
-♚ عمل شير لكل الجروبات في البوت
+( .اذاعه )
+♚ عمل اذاعه لكل الجروبات في البوت
 ꔹ━━━━━ꔹ
 ( .جلب )
 ♚ يجلب لك ملفات سكريبت جيثب `
@@ -8773,6 +8773,9 @@ teks = `• مرحبا ياروحي ⤌⤈      
  ( .مغادره )
 ♚ مغادره الجيم في اكس او
  ꔹ━━━━━ꔹ
+ ( .الفاكهه )
+♚ لعبه الفاكهه
+ ꔹ━━━━━ꔹ
 ( .زواج )
 ♚ البوت يزوج اثنين عشوائي
  ꔹ━━━━━ꔹ
@@ -8951,8 +8954,8 @@ teks = `• مرحبا ياروحي ⤌⤈
 ( .عادي )
 ♚ جعل شخص عادي بالبوت وغير مميز
 ꔹ━━━━━ꔹ
-( .شير )
-♚ عمل شير لكل الجروبات في البوت
+( .اذاعه )
+♚ عمل اذاعه لكل الجروبات في البوت
 ꔹ━━━━━ꔹ
 ( .جلب )
 ♚ يجلب لك ملفات سكريبت جيثب 
