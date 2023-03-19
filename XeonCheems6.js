@@ -1698,7 +1698,7 @@ await XeonBotInc.sendMessage(i, { video:media,  caption: txt, mentions:participa
              case 'الصاحيين': case 'المتصلين': {
                     let id = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : m.chat
                     let online = [...Object.keys(store.presences[id]), botNumber]
-                    XeonBotInc.sendText(m.chat, '𓆩  *قفشتكم يا ورعان👾*  𓆪:\n\n' + online.map(v => '${themeemoji} @' + v.replace(/@.+/, '')).join`\n`, m, { mentions: online })
+                    XeonBotInc.sendText(m.chat, '𓆩  *قفشتكم يا ورعان👾*  𓆪:\n\n' + online.map(v => '◐ @' + v.replace(/@.+/, '')).join`\n`, m, { mentions: online })
              }
              break
 case 'sticker': case 's': case 'ملصق': case 'ستيكر': {
@@ -1779,7 +1779,7 @@ break
 	    break
          case 'tts': case 'انطق': case 'قول': {
          	if (!text) throw `مثال : ${prefix + command} والنص`
-             let tts = await fetchJson(`https://api.akuari.my.id/texttovoice/texttosound_arab?query=${text}`)
+             let tts = await fetchJson(`https://api.akuari.my.id/texttovoice/texttosound_english?query=${text}`)
              XeonBotInc.sendMessage(m.chat, { audio: { url: tts.result }, mimetype: 'audio/mp4', ptt: true, fileName: `${text}.mp3` }, { quoted: m })
          	}
          break 
@@ -1787,7 +1787,7 @@ break
 let { TelegraPh } = require('./lib/uploader')
 if (!text) return m.reply(`رد علي صوره واكتب ${prefix + command} *والنص*`)
 if (text.includes('|')) return m.reply(`رد علي صوره واكتب ${prefix + command} *والنص*`)
-if (!/image/.test(mime)) return m.reply(`رد علي صوره واكتب${prefix + command} *والنص*`)
+if (!/image/.test(mime)) return m.reply(`رد علي صوره واكتب ${prefix + command} *والنص*`)
 m.reply(mess.wait)
 mee = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
 mem = await TelegraPh(mee)
@@ -6923,23 +6923,23 @@ case 'how': {
             await XeonBotInc.sendButtonText(m.chat, buttons, jawab, botname, m)
             }
             break
-case 'الخنزره': {
-            	if (!text) throw `مثال : ${prefix + command} ايتاشي`
+case 'الغباء': {
+            	if (!text) throw `مثال : ${prefix + command} عبدالله`
             	let ra = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
                 let kah = ra[Math.floor(Math.random() * ra.length)]
                 let jawab = `*الاسم ${text}*\nالاجابه : ${kah}%`
-                let buttons = [{ buttonId: 'hehehe', buttonText: { displayText: 'هههههه😂' }, type: 1 }]
+                let buttons = [{ buttonId: 'hehehe', buttonText: { displayText: '😂​💔' }, type: 1 }]
             await XeonBotInc.sendButtonText(m.chat, buttons, jawab, botname, m)
             }
             break
-case 'runtime': {
-            	let lowq = `*The Bot Has Been Online For:*\n*${runtime(process.uptime())}*`
-                let buttons = [{ buttonId: 'menu', buttonText: { displayText: 'Menu' }, type: 1 }]
+case 'بوت': {
+            	let lowq = `*انا متصل يعم متصدعناش🤺:*\n*${runtime(process.uptime())}*`
+                let buttons = [{ buttonId: 'menu', buttonText: { displayText: 'الاوامر' }, type: 1 }]
                 await XeonBotInc.sendButtonText(m.chat, buttons, lowq, botname, m, {quoted: fkontak})
             	}
             break
-case 'handsomecheck':
-				if (!text) return m.reply(`Tag Someone, Example : ${prefix + command} @Xeon`)
+case 'الحب':
+				if (!text) return m.reply(`منشن علي شخص, مثال : ${prefix + command} @abdallah`)
 					const gan = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					const teng = gan[Math.floor(Math.random() * gan.length)]
 XeonBotInc.sendMessage(from, { text: `*${command}*\n\nالاسم : ${q}\nالاجابه : *${teng}%*` }, { quoted: m })
@@ -6957,7 +6957,7 @@ XeonBotInc.sendMessage(from, { text: `*${command}*\n\nالاسم : ${q}\nالا�
 					const taky = xeony[Math.floor(Math.random() * xeony.length)]
 					XeonBotInc.sendMessage(from, { text: `التحقق من الشخصيه : ${q}\nالاجابه : *${taky}*` }, { quoted: m })
 				     break
-                    case 'الحب':
+                    case 'تتتتتتتتت':
   case 'greatcheck':
     case 'gaycheck':
       case 'cutecheck':
@@ -9123,6 +9123,12 @@ teks = `• مرحبا ياروحي ⤌⤈
 𓍹——————————𓍻
 𓆩اليك قائمة باوامر التسليه𓆪
 𓍹——————————𓍻
+( .اكس )
+♚ لعبه اكس او
+ ꔹ━━━━━ꔹ
+ ( .مغادره )
+♚ مغادره الجيم في اكس او
+ ꔹ━━━━━ꔹ
 ( .زواج )
 ♚ البوت يزوج اثنين عشوائي
  ꔹ━━━━━ꔹ
