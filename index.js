@@ -192,7 +192,7 @@ let buttons = [
 {buttonId: `wkwwk`, buttonText: {displayText: 'نورت يحب اتمني ان تستمتع معنا في جروبنا المتواضع♥✨'}, type: 1}
 ]
 let buttonMessage = {
-document: fs.readFileSync('./ElgazarMedia/theme/cheems.xlsx'),
+document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
 mimetype: docs,
 jpegThumbnail:XeonWlcm,
 mentions: [num],
@@ -243,7 +243,7 @@ let buttons = [
 {buttonId: `wkwkwk`, buttonText: {displayText: 'مع السلامه يحب نتمني لك يوم سعيد♥✨'}, type: 1}
 ]
 let buttonMessage = {
-document: fs.readFileSync('./ElgazarMedia/theme/cheems.xlsx'),
+document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
 mimetype: docs,
 jpegThumbnail:XeonLft,
 mentions: [num],
