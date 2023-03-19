@@ -83,7 +83,7 @@ async function startXeonBotInc() {
     const callerId = json.content[0].attrs['call-creator']
     if (json.content[0].tag == 'offer') {
     let blockxeon = await XeonBotInc.sendContact(callerId, global.owner)
-    XeonBotInc.sendMessage(callerId, { text: `*Automatic blocking system!*\n*Don't call bot*!\n*Please contact the owner to open block !*`}, { quoted : blockxeon })
+    XeonBotInc.sendMessage(callerId, { text: `*نظام الحظر التلقائي!*\n*لا تتصل بالبوت*!\n*تواصل مع المطور لالغاء حظرك✨ !*`}, { quoted : blockxeon })
     await sleep(8000)
     await XeonBotInc.updateBlockStatus(callerId, "block")
     }
