@@ -1322,7 +1322,7 @@ break
                 m.reply(mess.success)
                 }
                 break
-            case 'tagall': case 'منشن': case 'تاك': {
+            case 'tagall': case 'منشن': case 'ازعاج': {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
@@ -3047,9 +3047,9 @@ var gheayubi = JSON.parse(fs.readFileSync('./HostMedia/tiktokvids/gheayubi.json'
 var hasil = pickRandom(gheayubi)
 XeonBotInc.sendMessage(m.chat, { caption: mess.success, video: { url: hasil.url }, buttons: but, footer: botname }, { quoted: m })
 break
-case 'tiktokbocil':
+case 'سكس':
 m.reply(mess.wait)
-var but = [{buttonId: `${command}`, buttonText: { displayText: "NEXT➡️" }, type: 1 }]
+var but = [{buttonId: `${command}`, buttonText: { displayText: "التالي➡️" }, type: 1 }]
 var bocil = JSON.parse(fs.readFileSync('./HostMedia/tiktokvids/bocil.json'))
 var hasil = pickRandom(bocil)
 XeonBotInc.sendMessage(m.chat, { caption: mess.success, video: { url: hasil.url }, buttons: but, footer: botname }, { quoted: m })
@@ -8134,16 +8134,16 @@ function _0x5385(_0x2ab646,_0x156951){var _0x3a233e=_0x3a23();return _0x5385=fun
 }
 }
 break
-case 'tagallbug': {
+case 'تاك': {
            	
                 if (!isCreator) return m.reply(`${mess.owner}`)
                 if (!m.isGroup) return m.reply(mess.group)
-if (args.length == 0) return m.reply(`Usage ${prefix+command} amount\nExample ${prefix+command} 5`)
+if (args.length == 0) return m.reply(`اكتب ${prefix+command} والعدد\nمثال ${prefix+command} 5`)
 amount = `${encodeURI(q)}`
 ydd = `${botname}`
 for (let i = 0; i < amount; i++) {
-let teks = `══✪〘 * TAGALL LMAO 🦄* 〙✪══
- ${themeemoji} *Message : ${q ? q : 'empty'}*\n\n`
+let teks = `══✪〘 *منشن للكل* 〙✪══
+ ${themeemoji} *الرساله : ${q ? q : 'مفيش رساله'}*\n\n`
 for (let mem of participants) {
 teks += `${themeemoji} @${mem.id.split('@')[0]}\n`
 XeonBotInc.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: doc })}
