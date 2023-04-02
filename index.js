@@ -197,7 +197,7 @@ buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title: `${ownername}`,
-body: `Don't forget to read group description`,
+body: `نورت الجروب يحب♥✨`,
 mediaType:2,
 thumbnail: XeonWlcm,
 sourceUrl: `${websitex}`,
@@ -216,7 +216,7 @@ ElgazarBot.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
 , @${xeonName.split("@")[0]}, 
 ꔹ━━━━━ꔹ
 ⋆ حد يبقي في جروب قمر زي جروب
-${metadata.subject}.
+${metadata.subject} ويغادر😂.
 ꔹ━━━━━ꔹ
 ⋆ عدد الاعضاء..
 ${xeonmembers} عضو
@@ -225,7 +225,7 @@ ${xeonmembers} عضو
 ${xeontime} ${xeondate}
 ꔹ━━━━━ꔹ`
 let buttons = [
-{buttonId: `wkwkwk`, buttonText: {displayText: 'حد يكون في جروب زي دا ويغادر يحمار يلا غور فداهيه..🖤😂'}, type: 1}
+{buttonId: `wkwkwk`, buttonText: {displayText: 'مع السلامه تخرج يجي غيرك😉✨'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
@@ -240,7 +240,7 @@ buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title: `${ownername}`,
-body: `Bye! my friend, take care.`,
+body: `مع السلامه تخرج يجي غيرك😉✨.`,
 mediaType:2,
 thumbnail: XeonLft,
 sourceUrl: `${websitex}`,
