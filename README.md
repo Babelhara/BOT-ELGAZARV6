@@ -23,11 +23,11 @@
 -------
 # طريقه تنصيب البوت 👇
 
-- اولا يجب عمل فورك للمشروع [اضغط هنا](https://github.com/Babelhara/BOT_ELGAZARV8)
+- اولا يجب عمل فورك للمشروع [اضغط هنا](https://github.com/Sjshskdhd/BOT_ELGAZARV6/tree/main)
 
 ## `ثم عمل سكان للباركود`
 <a href="https://BOT-ELGAZAR-QR.lsydlsyd3.repl.co/"><img src="https://repl.it/badge/github/quiec/whatsAlfa" width="200" />
 </a>
 #### بعد تصوير الباركود قم برفع الملف علي الاسكريبت وقم بالضغط علي زر التنصيب علي هيروكو`
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Babelhara/BOT_ELGAZARV8?)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Sjshskdhd/BOT_ELGAZARV6/tree/main?)
