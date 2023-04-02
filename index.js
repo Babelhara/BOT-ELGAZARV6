@@ -99,7 +99,7 @@ async function startElgazarBot() {
         if (!ElgazarBot.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
         if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
         m = smsg(ElgazarBot, mek, store)
-        require("./XeonCheems6")(ElgazarBot, m, chatUpdate, store)
+        require("./ElgazarBot-MD6")(ElgazarBot, m, chatUpdate, store)
         } catch (e) {
             console.log(e)
         }
