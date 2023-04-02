@@ -142,127 +142,72 @@ let docs = pickRandom(documents)
             let metadata = await ElgazarBot.groupMetadata(anu.id)
             let participants = anu.participants
             for (let num of participants) {
-                // Get Profile Picture User
+  
                 try {
                     ppuser = await ElgazarBot.profilePictureUrl(num, 'image')
                 } catch {
-                    ppuser = 'https://i.ibb.co/sbqvDMw/avatar-contact-large-v2.png'
+                    ppuser = 'https://wallpapercave.com/w/uwp3437174'
                 }
 
-                // Get Profile Picture Group
                 try {
-                    ppgroup = await zass.profilePictureUrl(anu.id, 'image')
+                    ppgroup = await ElgazarBot.profilePictureUrl(anu.id, 'image')
                 } catch {
-                    ppgroup = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png'
+                    ppgroup = 'https://wallpapercave.com/w/uwp3437174'
                 }
-                
-                //welcome\\
-        let nama = await ElgazarBot.getName(num)
-memb = metadata.participants.length
-XeonWlcm = await getBuffer(ppuser)
-XeonLft = await getBuffer(ppuser)
+
+                let targetname = await ElgazarBot.getName(num)
+                grpmembernum = metadata.participants.length
+
+            
                 if (anu.action == 'add') {
-                const xeonbuffer = await getBuffer(ppuser)
-                let xeonName = num
-                const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-	            const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
-	            const xmembers = metadata.participants.length
-                let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: XeonWlcm, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                xeonbody = `*═════⊹⊱≼ʙᴏт ᴇʟɢᴀᴢᴀʀ🌿 ≽⊰⊹═════*
+                let WAuserName = num
+                ElgazarBottext = `
+⋆ اهلا بيك يا..
+ @${xeonName.split("@")[0]},
+ꔹ━━━━━ꔹ
+⋆ نورت جروب..
+${metadata.subject}.
+ꔹ━━━━━ꔹ
+⋆ وهذا هو وصف الجروب..
+${metadata.desc}
+ꔹ━━━━━ꔹ
+⋆ من فضلك التزم بالقوانين..
+`
 
-
-˼‏✧˹↫هاي :
- ✑〖 @${xeonName.split("@")[0]} 〗
-
-
-*˼‏✧˹↫مرحبا بك في :
- ✑〖 ${metadata.subject} 〗
-
-
-*˼‏✧˹↫عدد الاعضاء :
-✑〖 ${xmembers} عضو 〗
-
-
-*˼‏✧˹↫: انضم في :
-✑〖 ${xtime} ${xdate} 〗
-
-
-*═════⊹⊱≼ʙᴏт ᴇʟɢᴀᴢᴀʀ🌿 ≽⊰⊹═════*`
-let buttonMessage = {
-document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
-mimetype: docs,
-jpegThumbnail:XeonWlcm,
-mentions: [num],
-fileName: `${metadata.subject}`,
-fileLength: 99999999999999,
-caption: xeonbody,
-footer: `${botname}`,
-buttons: buttons,
-headerType: 4,
-contextInfo:{externalAdReply:{
-title: `${ownername}`,
-body: `Don't forget to read group description`,
-mediaType:2,
-thumbnail: XeonWlcm,
-sourceUrl: `${websitex}`,
-mediaUrl: `${websitex}`
-}}
-}
-ElgazarBot.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
+    let buttonMessage = {
+    image: await getBuffer(ppuser),
+    mentions: [num],
+    caption: ElgazarBottext,
+    footer: `${global.botname}`,
+    headerType: 4,
+    }
+ElgazarBot.sendMessage(anu.id, buttonMessage)
                 } else if (anu.action == 'remove') {
-                	const xeonbuffer = await getBuffer(ppuser)
-                    const xeontime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-	                const xeondate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
-                	let xeonName = num
-                    const xeonmembers = metadata.participants.length
-                    let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: xeonbuffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-                    xeonbody = `*═════⊹⊱≼ʙᴏт ᴇʟɢᴀᴢᴀʀ🌿 ≽⊰⊹═════*
+                	let WAuserName = num
+                    ElgazarBottext = `
+⋆ مع السلامه 👋
+, @${xeonName.split("@")[0]}, 
+ꔹ━━━━━ꔹ
+⋆ حد يبقي في جروب قمر زي جروب
+${metadata.subject}.
+ꔹ━━━━━ꔹ
+⋆ ويغادر يحمار يلا غور فداهيه..🖤😂
 
 
-˼‏✧˹↫مع السلامه :
- ✑〖 @${xeonName.split("@")[0]} 〗
+`
 
-
-*˼‏✧˹↫غادر :
- ✑〖 ${metadata.subject} 〗
-
-
-*˼‏✧˹↫عدد الاعضاء :
-✑〖 ${xeonmembers} عضو 〗
-
-
-*˼‏✧˹↫: غادر في :
-✑〖 ${xeontime} ${xeondate} 〗
-
-
-*═════⊹⊱≼ʙᴏт ᴇʟɢᴀᴢᴀʀ🌿 ≽⊰⊹═════*`
-let buttonMessage = {
-document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
-mimetype: docs,
-jpegThumbnail:XeonLft,
-mentions: [num],
-fileName: `${metadata.subject}`,
-fileLength: 99999999999999,
-caption: xeonbody,
-footer: `${botname}`,
-buttons: buttons,
-headerType: 4,
-contextInfo:{externalAdReply:{
-title: `${ownername}`,
-body: `Bye! my friend, take care.`,
-mediaType:2,
-thumbnail: XeonLft,
-sourceUrl: `${websitex}`,
-mediaUrl: `${websitex}`
-}}
-}
-ElgazarBot.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
-                             
-                }
+    let buttonMessage = {
+	image:await getBuffer(ppuser),
+    mentions: [num],
+    caption: ElgazarBottext,
+    footer: `${global.botname}`,
+    headerType: 4,
+    
+    }
+    ElgazarBot.sendMessage(anu.id, buttonMessage)}}
+            } catch (err) {
+                console.log(err)
             }
-        } catch (e) {
-            console.log(e)
-        }
     })
     // Setting
     ElgazarBot.decodeJid = (jid) => {
