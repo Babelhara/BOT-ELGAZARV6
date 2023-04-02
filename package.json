@@ -1,5 +1,5 @@
 {
-  "name": "CheemsBot-MD",
+  "name": "Moxie-BOT-MD",
   "version": "6.0.0",
   "description": "Automated whatsapp md bot created using nodejs and baileys lib",
   "type": "commonjs",
@@ -15,9 +15,9 @@
     "bot",
     "bot-md",
     "multi-device",
-    "xeon-bot-inc"
+    "Moxie-bot-inc"
   ],
-  "author": "DGXeon",
+  "author": "Moxie-Bot",
   "license": "AGPL-3",
   "dependencies": {
     "@adiwajshing/baileys": "^4.4.0",
@@ -81,10 +81,10 @@
     "src": "src"
   },
   "devDependencies": {},
-  "repository": "git+https://github.com/DGXeon/CheemsBot-MD6.git",
+  "repository": "git+https://github.com/nipuna15/test.git",
   "bugs": {
-    "url": "https://github.com/DGXeon/CheemsBot-MD6/issues"
+    "url": "https://github.com/nipuna15/test/issues"
   },
-  "homepage": "https://github.com/DGXeon/CheemsBot-MD6/#readme",
+  "homepage": "https://github.com/nipuna15/test/#readme",
   "main": "index.js"
 }
