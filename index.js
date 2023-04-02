@@ -188,9 +188,6 @@ XeonLft = await getBuffer(ppuser)
 
 
 *═════⊹⊱≼ʙᴏт ᴇʟɢᴀᴢᴀʀ🌿 ≽⊰⊹═════*`
-let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: 'نورت يحب اتمني ان تستمتع معنا في جروبنا المتواضع♥✨'}, type: 1}
-]
 let buttonMessage = {
 document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
 mimetype: docs,
@@ -239,9 +236,6 @@ ElgazarBot.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
 
 
 *═════⊹⊱≼ʙᴏт ᴇʟɢᴀᴢᴀʀ🌿 ≽⊰⊹═════*`
-let buttons = [
-{buttonId: `wkwkwk`, buttonText: {displayText: 'مع السلامه يحب نتمني لك يوم سعيد♥✨'}, type: 1}
-]
 let buttonMessage = {
 document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
 mimetype: docs,
