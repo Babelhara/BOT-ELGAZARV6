@@ -163,6 +163,127 @@ if (cek == null) return null
 		const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': ownername, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${ownername},;;;\nFN:${ownername}\nitem1.TEL;waid=916909137213:916909137213\nitem1.X-ABLabel:Mobile\nEND:VCARD`, 'jpegThumbnail': thumb, thumbnail: thumb,sendEphemeral: true}}}
 	    const fakestatus = {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {})},message: { "imageMessage": {"url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc","mimetype": "image/jpeg","caption": wm,"fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=","fileLength": "28777","height": 1080,"width": 1079,"mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=","fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=","directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69","mediaKeyTimestamp": "1610993486","jpegThumbnail": fs.readFileSync('./XeonMedia/theme/cheemspic.jpg'),"scansSidecar": "1W0XhfaAcDwc7xh1R8lca6Qg/1bB4naFCSngM2LKO2NoP5RI7K+zLw=="}}}
 		
+		
+		function pickRandom(list) {
+return list[Math.floor(list.length * Math.random())]
+}
+
+//Some special chat replies
+	
+ let smallinput = budy.toLowerCase()
+    if (smallinput.includes('نورت')) {
+      reply (`*بنوري طبعا✨*`);
+    } 
+    
+if (smallinput.includes('جزار') || smallinput.includes(' hui')) {
+      reply (`*قلب الجزار من جوا🥺♥✨*`);
+      }
+      
+    if( smallinput.includes('بحبك') || smallinput.includes('انا بحبك') || smallinput.includes('love you') || smallinput.includes('I love you bot')){
+      reply (`*بحبك اكتر🥺✨*`);
+    }
+   
+    if (smallinput=='bot') {
+      reply (`مرحبا *${pushname}*, انا *${BotName}*, بوت واتساب مطور من الجزار*  اكتب  *${prefix}الاوامر* لظهور قائمه الاوامر الخاصه بي.`);
+    }
+
+    if (smallinput=='بوت') {
+        reply (`*اسمي الجزار يروحي♥✨*`)
+    }
+    
+    if (smallinput=='السلام عليكم') {
+        reply (`*وعليكم السلام حبي تفضل❤*`)
+    }
+    
+    if (smallinput=='ميكاسا') {
+        reply (`*ميكاسا عمتكم🥺♥✨*`)
+    }
+    
+    if (smallinput=='توغا') {
+        reply (`*توغا عمتكم🥺♥✨*`)
+    }
+    
+    if (smallinput=='كلخرا') {
+        reply (`*ما اكلك طعمك زق مثل وجهك🤢*`)
+    }
+    
+    if (smallinput=='كل خرا') {
+        reply (`*ما اكلك طعمك زق مثل وجهك🤢*`)
+    }
+    
+    if (smallinput=='تبا لك') {
+        reply (`*ولك يزق😆*`)
+    }
+
+    if (smallinput=='هاي') {
+        reply (`*هاي يروحي🥺♥*`)
+    }
+    
+    if (smallinput=='ايتاشي') {
+        reply (`*ايتاشي عمك🤺✨*`)
+    }
+    
+    if (smallinput=='الجزار') {
+        reply (`*الجزار عمك🤺✨*`)
+    }
+    
+    if (smallinput=='من صنعك') {
+        reply (`*الجزار مطوري 🥺✨*`)
+    }
+    
+    if (smallinput=='زورو') {
+        reply (`*زورو عمك🤺✨*`)
+    }
+    
+    if (smallinput=='لا') {
+        reply (`*ليش لا يكلب👾 *`)
+    }
+    
+    if (smallinput=='اسكت') {
+        reply (`*اما انت غتت صحيح🥺💔*`)
+    }
+    
+if (smallinput=='احا') {
+        reply (`*احتين علي احتك🥺😂✨*`)
+    }
+if (smallinput=='😂😂😂') {
+        reply (`*دوم الضحكه الحلوه❤✨*`)
+    }
+
+    
+if (smallinput=='😂😂') {
+        reply (`*دوم يروحي🥺❤✨*`)
+    }
+
+    if (smallinput.includes('تصبح علي خير') || smallinput.includes('ohayo')) {
+      reply (`*وانت من اهل الخير يروحي🥺❤*`);
+    }
+
+if (smallinput=='كلزق') {
+        reply (`*ما اكلك يوصخ🗿👞*`)
+    }
+    
+    if (smallinput=='كل زق') {
+        reply (`*ما اكلك يوصخ🗿👞*`)
+    }
+    
+    if (smallinput=='دز') {
+        reply (`*دز انت🤺*`)
+    }
+    
+    if (smallinput=='اتفق') {
+        reply (`*اطلق من يتفق✨*`)
+    }
+    
+    if (smallinput.includes('🙃')) {
+      reply (`*اقلب وجهك يورع😂✨*`);
+    }
+
+    if (smallinput.includes('🙂🙂')|| smallinput.includes('arigatou') || smallinput.includes('thank')) {
+      reply (`*ابتسم للحياه يا حياتي♥✨*`);
+    }      
+
+switch(command) {
 	
 // Group
         const groupMetadata = m.isGroup ? await ElgazarBot.groupMetadata(m.chat).catch(e => {}) : ''
@@ -1527,8 +1648,8 @@ case 'group': case 'جروب': {
                     await ElgazarBot.groupSettingUpdate(m.chat, 'not_announcement').then((res) => m.reply(`*تم فتح الجروب*`)).catch((err) => m.reply(jsonformat(err)))
                 } else {
                 let buttons = [
-                        { buttonId: 'group open', buttonText: { displayText: 'فتح' }, type: 1 },
-                        { buttonId: 'group close', buttonText: { displayText: 'قفل' }, type: 1 }
+                        { buttonId: 'جروب فتح', buttonText: { displayText: 'فتح' }, type: 1 },
+                        { buttonId: 'جروب قفل', buttonText: { displayText: 'قفل' }, type: 1 }
                     ]
                     await ElgazarBot.sendButtonText(m.chat, buttons, `حاله الجروب`, botname, m)
 
@@ -8683,7 +8804,7 @@ teks = `• مرحبا ياروحي ⤌⤈      
 ( .لمتحرك )
 ♚ تحويل ملصق لمتحرك
  ꔹ━━━━━ꔹ
- ( .ظبطها )
+ ( .اظبطها )
 ♚ لحذف خلفيه الصور
 ꔹ━━━━━ꔹ
  ( .ايموجي )
@@ -9094,7 +9215,7 @@ teks = `• مرحبا ياروحي ⤌⤈
 ( .لمتحرك )
 ♚ تحويل ملصق لمتحرك
  ꔹ━━━━━ꔹ
- ( .ظبطها )
+ ( .اظبطها )
 ♚ لحذف خلفيه الصور
 ꔹ━━━━━ꔹ
  ( .ايموجي )
