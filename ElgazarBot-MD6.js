@@ -1777,12 +1777,22 @@ break
 		}
 	    }
 	    break
-         case 'tts': case 'انطق': case 'قول': {
-         	if (!text) throw `مثال : ${prefix + command} والنص`
-             let tts = await fetchJson(`https://api.akuari.my.id/texttovoice/texttosound_english?query=${text}`)
-             ElgazarBot.sendMessage(m.chat, { audio: { url: tts.result }, mimetype: 'audio/mp4', ptt: true, fileName: `${text}.mp3` }, { quoted: m })
-         	}
-         break 
+         case "tts":  case "انطق":  case "قول": case "speak":{
+    if (isBan) return reply(mess.banned)	 			
+    if (isBanChat) return reply(mess.bangc)
+
+    if (!args[0]) return reply("من فضلك اكتب اي شئ و سوف انطقه!")
+      
+      let texttosay = text
+        ? text
+        : m.quoted && m.quoted.text
+        ? m.quoted.text
+        : m.text;
+      const SpeakEngine = require("google-tts-api"); 
+      const texttospeechurl = SpeakEngine.getAudioUrl(texttosay, {lang: "ar", slow: false, host: "https://translate.google.com",});
+      ElgazarBot.sendMessage(m.chat,{audio: {url: texttospeechurl,},mimetype: "audio/mpeg",fileName: `ElgazarBotSpeechEngine.mp3`,},{quoted: m,});
+    }
+    break 
 	case 'smeme': case 'اكتب': case 'كتابه': {
 let { TelegraPh } = require('./lib/uploader')
 if (!text) return m.reply(`رد علي صوره واكتب ${prefix + command} *والنص*`)
@@ -7198,43 +7208,9 @@ ElgazarBot.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
             break
             
-case 'التنصيب': case 'التسجيل': {
-teks = `• مرحبا ياروحي ⤌⤈       
-𓆩 *${pushname}* 𓆪
-• انا بوت واتس اسمي ⤌⤈
-𓆩 *${global.botname}* 𓆪
-• تم تطويري وبرمجتي •
-• بواسطه عبدالله محمد •
-• اذا كنت تريد صنع بوت مماثل لهذا •
-يجب عليك الانظمام لهذه القناه وسماع الشروحات لتنصيب بوت وتس مثل هذا البوت
- 
-قناة برمجه الجزار للشروحات
-https://youtube.com/@ABDALLAH_MOHAMED
-
-لينك شاتي 
-https://api.whatsapp.com/send?phone=+201098906252`
-let buttons = [
-{buttonId: `owner`, buttonText: {displayText: 'المطور👤'}, type: 1}
-]
-let buttonMessage = {
-image: {url: `https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg`},
-jpegThumbnail: log0,
-caption: teks,
-footer: `${botname}`,
-buttons: buttons,
-headerType: 4,
-contextInfo:{externalAdReply:{
-title:"ᴇʟɢᴀᴢᴀʀ ʙᴏт",
-body: "سورس الجزار", 
-thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
-mediaType:1,
-mediaUrl: 'https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg',
-sourceUrl: "https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg"
-}}
-}
-ElgazarBot.sendMessage(m.chat, buttonMessage, { quoted: m })
-}
-            break
+case 'جزار':
+if (!text) return m.reply(`هلا يحب`)
+break
                         
 case 'quotes':
 const quotexeony = await axios.get(`https://favqs.com/api/qotd`)
