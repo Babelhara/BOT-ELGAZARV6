@@ -4977,7 +4977,6 @@ case 'dare': case 'تويت':
 "أنِر ظُلمتي، وامحُ خطيئتي، واقبل توبتي وأعتِق رقبتي يا اللّٰه. إنكَ عفوٌّ تُحِبُّ العفوَ؛ فاعفُ عني 💛 ",
 ]
               const xeonhfuduf = hfuduf[Math.floor(Math.random() * hfuduf.length)]
-              bufferhfuduf = await getBuffer(`https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg`)
               ElgazarBot.sendMessage(from, { image: bufferhfuduf, caption: '*♚ مرحبا بك في البوستات*\nꔹ━━━━━ꔹ\n'+ xeonhfuduf }, {quoted:m})
               break
        
