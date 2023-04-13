@@ -4977,8 +4977,8 @@ case 'dare': case 'تويت':
 "أنِر ظُلمتي، وامحُ خطيئتي، واقبل توبتي وأعتِق رقبتي يا اللّٰه. إنكَ عفوٌّ تُحِبُّ العفوَ؛ فاعفُ عني 💛 ",
 ]
               const xeonhfuduf = hfuduf[Math.floor(Math.random() * hfuduf.length)]
-              bufferhfuduf = await getBuffer(`false`)
-              ElgazarBot.sendMessage(from, { image: bufferhfuduf, caption: '*♚ مرحبا بك في البوستات*\nꔹ━━━━━ꔹ\n'+ xeonhfuduf }, {quoted:m})
+              bufferhfuduf = await getBuffer(`كتتت`)
+              ElgazarBot.sendMessage(from, { text: bufferhfuduf, caption: '*♚ مرحبا بك في البوستات*\nꔹ━━━━━ꔹ\n'+ xeonhfuduf }, {quoted:m})
               break
        
        case 'gmscat': case 'كت':
