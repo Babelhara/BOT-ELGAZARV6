@@ -15,7 +15,8 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.owner = ['201098906252'] //ur owner number
+global.owner = ['
+201112422078'] //ur owner number
 global.ownername = "ᗴᒪᘜᗩᘔᗩᖇ ᗩᒪᗯᗩᘔᗴᖇ❤️" //ur owner name
 global.ytname = "YT: ELGAZAR" //ur yt chanel name
 global.socialm = "GitHub: ELGAZAR" //ur github or insta name
@@ -23,15 +24,15 @@ global.location = "Africa, Egypt, Cairo" //ur location
 
 //bot bomdy 
 global.ownernomer = "201098906252" //ur number
-global.premium = ['201098906252'] //ur premium number
-global.botname = '❤️ᗴᒪᘜᗩᘔᗩᖇ ᗷOT❤️' //ur bot name
-global.linkz = "https://youtube.com/@ABDALLAH_MOHAMED" //your theme url which will be displayed on whatsapp
+global.premium = ['201112422078'] //ur premium number
+global.botname = '𝐌𝐀𝐈𝐊𝐘 𝐁𝐎𝐓' //ur bot name
+global.linkz = "" //your theme url which will be displayed on whatsapp
 global.websitex = "https://telegra.ph/file/ec763cc3e7c88d0e67682.jpg" //ur website to be displayed
-global.botscript = 'https://youtube.com/@ABDALLAH_MOHAMED' //script link
+global.botscript = '' //script link
 global.themeemoji = "♥" //ur theme emoji
-global.packname = "⍣الجزار الوزير يروحي⍣" //ur sticker watermark packname
-global.author = "⍣01098906252⍣" //ur sticker watermark author
-global.wm = "❤️ᗴᒪᘜᗩᘔᗩᖇ ᗷOT❤️." //ur watermark
+global.packname = "⍣مايكي بيحبك⍣" //ur sticker watermark packname
+global.author = "⍣201112422078⍣" //ur sticker watermark author
+global.wm = "𝐌𝐀𝐈𝐊𝐘 𝐁𝐎𝐓." //ur watermark
 
 // Other
 global.sessionName = 'session'
