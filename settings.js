@@ -15,23 +15,23 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.owner = ['201098906252'] //ur owner number
-global.ownername = "ᗴᒪᘜᗩᘔᗩᖇ ᗩᒪᗯᗩᘔᗴᖇ❤️" //ur owner name
-global.ytname = "YT: ELGAZAR" //ur yt chanel name
-global.socialm = "GitHub: ELGAZAR" //ur github or insta name
+global.owner = ['201273222681'] //ur owner number
+global.ownername = "𝑴𝑶𝑯𝑨𝑵𝑨𝑫 𝑴𝑶𝑯𝑨𝑴𝑨𝑫❤️" //ur owner name
+global.ytname = "MO: MOHANAD" //ur yt chanel name
+global.socialm = "GitHub: MOHANAD" //ur github or insta name
 global.location = "Africa, Egypt, Cairo" //ur location
 
 //bot bomdy 
-global.ownernomer = "201098906252" //ur number
-global.premium = ['201098906252'] //ur premium number
-global.botname = '❤️ᗴᒪᘜᗩᘔᗩᖇ ᗷOT❤️' //ur bot name
+global.ownernomer = "201273222681" //ur number
+global.premium = ['201273222681'] //ur premium number
+global.botname = '❤️𝑴𝑶𝑯𝑨𝑵𝑨𝑫 𝑩𝑶𝑻❤️' //ur bot name
 global.linkz = "https://youtube.com/@ABDALLAH_MOHAMED" //your theme url which will be displayed on whatsapp
 global.websitex = "https://telegra.ph/file/ec763cc3e7c88d0e67682.jpg" //ur website to be displayed
 global.botscript = 'https://youtube.com/@ABDALLAH_MOHAMED' //script link
 global.themeemoji = "♥" //ur theme emoji
-global.packname = "⍣الجزار الوزير يروحي⍣" //ur sticker watermark packname
-global.author = "⍣01098906252⍣" //ur sticker watermark author
-global.wm = "❤️ᗴᒪᘜᗩᘔᗩᖇ ᗷOT❤️." //ur watermark
+global.packname = "⍣مهنـدالتعزي⍣" //ur sticker watermark packname
+global.author = "⍣773205686⍣" //ur sticker watermark author
+global.wm = "❤️𝑴𝑶𝑯𝑨𝑵𝑨𝑫 𝑩𝑶𝑻❤️." //ur watermark
 
 // Other
 global.sessionName = 'session'
@@ -41,13 +41,13 @@ global.sp = ''
 //messages
 global.mess = {
     success: 'تم يروحي✨',
-    admin: '『 الامر دا لادمن بس! 』',
+    admin: '『 الامر ذا لادمن بس! 』',
     botAdmin: '『 ارفع البوت ادمن الاول 』',
     premime: '『 ميزات خاصة متميزة إذا كنت ترغب في تسجيل نوع الإيجار 』',
-    owner: '『 الميزه دي للمطور بس! 』',
-    group: '『 الميزه دي للجروبات بس! 』',
-    private: '『 الميزه دي في الخاص بس! 』',
-    bot: '『 الميزه دي للبوت بس! 』',
+    owner: '『 الميزه ذي للمطور بس! 』',
+    group: '『 الميزه ذي للجروبات بس! 』',
+    private: '『 الميزه ذي في الخاص بس! 』',
+    bot: '『 الميزه ذي للبوت بس! 』',
     wait: '『 استني شويه... 』',
     linkm: '『 فين الرابط? 』',
     endLimit: 'انتهت صلاحية الحد اليومي الخاص بك ، وسيتم إعادة تعيين الحد كل 12 ساعة',
